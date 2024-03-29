@@ -46,7 +46,7 @@ void iniciarSesion(void)
 	char usuario[10];
 	char password[10];
 
-	printf("\n=======================================\nINICIO DE SESIÓN\n=======================================\n\n");
+	printf("\n=======================================\nINICIO DE SESION\n=======================================\n\n");
 
 	printf("Introducir Usuario: ");
 	scanf("%s", &usuario);
@@ -68,17 +68,17 @@ void iniciarSesion(void)
 
 void registrarUsuario(void)
 {
-	printf("\n=======================================\nREGISTRO DE SESIÓN\n=======================================\n\n");
+	printf("\n=======================================\nREGISTRO DE SESION\n=======================================\n\n");
 
 	printf("Introducir Nombre: \n");
 	printf("Introducir Apellido: \n");
 	printf("Introducir DNI: \n");
 	printf("Introducir email: \n");
 	printf("Introducir Nº Tarjeta: \n");
-	printf("Introducir Género(H/M): \n");
+	printf("Introducir Genero(H/M): \n");
 	printf("Introducir Año Nacimiento(XXXX): \n");
 	printf("Introducir Mes Nacimiento(XX): \n");
-	printf("Introducir Día Nacimiento(XX): \n");
+	printf("Introducir Dia Nacimiento(XX): \n");
 	printf("Introducir Usuario: \n");
 	printf("Introducir Contraseña: \n");
 }
@@ -95,7 +95,7 @@ void contrasenyaOlvidada(void)
 void menu(void)
 {
 	int optionMenu;
-	printf("\n=======================================\nBIENVENIDO AL MENÚ PRINCIPAL\n=======================================\n\n");
+	printf("\n=======================================\nBIENVENIDO AL MENU PRINCIPAL\n=======================================\n\n");
 
 	printf("1.Alquilar película\n2.Extender alquiler\n3.Datos de usuario\n4.Datos de alquiler\n5.Cerrar Sesion\n");
 
@@ -130,7 +130,7 @@ void genero(void)
 	int opcionGenero;
 	printf("\n=======================================\nGENERO\n=======================================\n\n");
 
-	printf("\n1.Accion\n2.Drama\n3.Ciencia Ficcion\n4.Clásicas\n5.Comedia\n6.Terror\n7.Románticas");
+	printf("\n1.Accion\n2.Drama\n3.Ciencia Ficcion\n4.Clásicas\n5.Comedia\n6.Terror\n7.Romanticas");
 	printf("\nIntroducir opcion: ");
 	
 	scanf("%i", &opcionGenero);
@@ -169,9 +169,9 @@ void datosUsuario(void)
 	int opcionDatosUsuario;
 	printf("\n=======================================\nDATOS USUARIO\n=======================================\n\n");
 	printf("\nNombre: \nApellido: \nDNI: \nEmail: \nNº Tarjeta: \nGenero(H/M): \nFecha Nacimiento: \nUsuario: \nPuntos: \n");
-	printf("\n¿Que quieres hacer?\n1.Editar informacion\n2.Eliminar Usuario\n3.Volver al Menu\n\n");
+	printf("\n¿Que quieres hacer?\n1.Editar informacion\n2.Eliminar Usuario\n3.Volver al Menu\n\nIntroducir opcion: ");
 
-	scanf("%i", &opcionDatosUsuario);
+	scanf("%i\n", &opcionDatosUsuario);
 
 	switch (opcionDatosUsuario)
 	{

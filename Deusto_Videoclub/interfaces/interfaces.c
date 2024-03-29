@@ -5,11 +5,38 @@
  *      Author: ima.dominguez
  */
 
+#include <stdio.h>
+#include "interfaces.h"
+
+
 void inicio(void)
 {
+	int option;
 	printf("=======================================\n             VIDEOCLUB\n=======================================\n\n");
 
 	printf("1.Iniciar Sesión\n2.Registrar Usuario\n3.Contraseña Olvidada\n4.Salir\n");
+	printf("Introducir opcion: ");
+	scanf("%i", &option);
+	switch (option)
+	{
+	case 1:
+		iniciarSesion();
+		break;
+	
+	case 2:
+		registrarUsuario();
+	
+	case 3:
+		contrasenyaOlvidada();
+	
+	case 4:
+		printf("salir\n");
+	default:
+		printf("Opcion no valida\n");
+		break;
+	}
+	
+	
 }
 
 void iniciarSesion(void)
@@ -37,7 +64,7 @@ void registrarUsuario(void)
 	printf("Introducir Contraseña: \n");
 }
 
-void contraseñaOlvidada(void)
+void contrasenyaOlvidada(void)
 {
 	printf("\nCONTRASEÑA OLVIDADA\n=======================================\n");
 

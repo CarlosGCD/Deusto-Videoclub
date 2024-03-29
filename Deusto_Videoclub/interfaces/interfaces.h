@@ -11,7 +11,7 @@
 void inicio(void);
 void iniciarSesion(void);
 void registrarUsuario(void);
-void contraseñaOlvidada(void);
+void contrasenyaOlvidada(void);
 void menu(void);
 void extender(void);
 
